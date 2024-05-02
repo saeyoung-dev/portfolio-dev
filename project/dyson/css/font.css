@@ -1,0 +1,120 @@
+/*Neutra*/
+@font-face {
+    font-family: 'NeutraText';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/neutra-text-alt-587261020eccb.woff') format('woff'),
+        url('../font/NeutraTextTF-Book.otf') format('otf');
+}
+
+
+@font-face {
+    font-family: 'NeutraText';
+    font-style: normal;
+    font-weight: light;
+    src: url('../font/neutra-text-light-5872613aeda5b.woff') format('woff'),
+        url('../font/NeutraTextTF-Light.otf') format('otf');
+}
+
+
+@font-face {
+    font-family: 'NeutraText';
+    font-style: normal;
+    font-weight: thin;
+    src: url('../font/neutra-text-tf-5871e0b0704ed.woff') format('woff'),
+        url('../font/NeutraTextTF-Demi.otf') format('otf');
+}
+
+
+@font-face {
+    font-family: 'NeutraText';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/neutra-text-bold-5871e1605afa2.woff') format('woff'),
+        url('../font/NeutraTextTF-Bold.otf') format('otf');
+}
+
+/*kr-bold - NotoSans*/
+@font-face {
+    font-family: 'NotoSans';
+    font-weight: bold;
+    src: url("../font/NotoSansCJKkr-Bold-Alphabetic.eot") format("eot"),
+        url("../font/NotoSansCJKkr-Bold-Alphabetic.ttf") format("truetype"),
+        url("../font/NotoSansCJKkr-Bold-Alphabetic.woff") format("woff"),
+        url("../font/NotoSansCJKkr-Bold-Alphabetic.woff2") format("woff2");
+}
+
+/*kr-medium*/
+@font-face {
+    font-family: 'NotoSans';
+    font-weight: medium;
+    src: url("../font/NotoSansCJKkr-Medium-Alphabetic.eot") format("eot"),
+        url("../font/NotoSansCJKkr-Medium-Alphabetic.ttf") format("truetype"),
+        url("../font/NotoSansCJKkr-Medium-Alphabetic.woff") format("woff"),
+        url("../font/NotoSansCJKkr-Medium-Alphabetic.woff2") format("woff2");
+}
+
+/*kr-normal*/
+@font-face {
+    font-family: 'NotoSans';
+    font-weight: normal;
+    src: url("../font/NotoSansCJKkr-Regular-Alphabetic.eot") format("eot"),
+        url("../font/NotoSansCJKkr-Regular-Alphabetic.ttf") format("truetype"),
+        url("../font/NotoSansCJKkr-Regular-Alphabetic.woff") format("woff"),
+        url("../font/NotoSansCJKkr-Regular-Alphabetic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'YDIYGO320';
+    font-weight: normal;
+    src: url("../font/YDIYGO320.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'YDIYGO340';
+    font-weight: normal;
+    src: url("../font/YDIYGO340.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-Medium.eot'),
+        url('../font/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/CircularStd-Medium.woff2') format('woff2'),
+        url('../font/CircularStd-Medium.woff') format('woff'),
+        url('../font/CircularStd-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-Bold.eot'),
+        url('../font/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/CircularStd-Bold.woff2') format('woff2'),
+        url('../font/CircularStd-Bold.woff') format('woff'),
+        url('../font/CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('../font/CircularStd-Book.eot'),
+        url('../font/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../font/CircularStd-Book.woff2') format('woff2'),
+        url('../font/CircularStd-Book.woff') format('woff'),
+        url('../font/CircularStd-Book.ttf') format('truetype');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flaunters';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/Flaunters.oft") format("otf"),
+        url('../font/Flaunters.woff') format('woff');
+}
+
+/*------------------FontFace END----------------*/

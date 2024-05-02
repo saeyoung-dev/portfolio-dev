@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="choisaeyoung">
+    <meta name="description" content="Animation">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap" rel="stylesheet">
+    <title>Circular Text Animation</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: -webkit-linear-gradient(left, #434343 0%, #0d0d0d 100%);
+            background-image: -o-linear-gradient(left, #434343 0%, #0d0d0d 100%);
+            background-image: linear-gradient(to right, #434343 0%, #0d0d0d 100%);
+            background-color: #434343;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .circle {
+            transform-style: preserve-3d;
+            animation: animate 8s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: perspective(800px) rotateY(360deg) rotateX(15deg);
+            }
+
+            100% {
+                transform: perspective(800px) rotateY(0deg) rotateX(15deg);
+            }
+        }
+
+        .circle .char {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #999;
+            font-size: 1.5em;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            transform: rotateY(calc(var(--char-index)*12deg)) translateZ(250px);
+            font-family: 'Antonio', sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="circle" data-splitting>
+        ······························
+<!--        LOVE-PEACE-JOY-LOVE-PEACE-JOY--->
+    </div>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script>
+        Splitting();
+
+    </script>
+</body>
+
+</html>

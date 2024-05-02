@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="choisaeyoung">
+    <meta name="description" content="Animation">
+    <title>SVG Text Animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            background-image: -webkit-linear-gradient(left, #434343 0%, #0d0d0d 100%);
+            background-image: -o-linear-gradient(left, #434343 0%, #0d0d0d 100%);
+            background-image: linear-gradient(to right, #434343 0%, #0d0d0d 100%);
+        }
+
+        svg {
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            width:100%; height: 100%;
+        }
+        
+        svg text {
+            text-transform: uppercase;
+            animation: stroke 5s infinite alternate;
+            stroke-width: 2;
+            stroke: : #434343;
+            font-size: 8rem;
+        }
+        
+        @keyframes stroke {
+            0% {
+                fill: rgba(80, 80, 80,0);
+                stroke: rgba(80, 80, 80,1);
+                stroke-dashoffset: 25%;
+                stroke-dasharray: 0 50%;
+                stroke-width: 2;
+            }
+            70% {
+                fill: rgba(80, 80, 80,0);
+                stroke: rgba(80, 80, 80,1);
+            }
+            80% {
+                fill: rgba(80, 80, 80,0);
+                stroke: rgba(80, 80, 80,1);
+                stroke-width: 3;
+            }
+            100% {
+                fill: rgba(80, 80, 80,1);
+                stroke: rgba(80, 80, 80,0);
+                stroke-dashoffset: -25%;
+                stroke-dasharray: 50% 0;
+                stroke-width: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <svg viewBox="0 0 1320 300">
+        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+            HELLO!
+        </text>
+    </svg>
+</body>
+
+</html>

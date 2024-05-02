@@ -1,0 +1,1381 @@
+/* ------> (Main)style.css*/
+
+/* --Page Transition-- */
+body {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 1.2s ease-in-out;
+}
+
+body.fade {
+    opacity: 0.2;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+/* --HEADER-- */
+header {
+    width: 100%;
+    height: 10vh;
+}
+
+#nav {
+    width: 100%;
+    padding: 2.8vw 2.1vw 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    font: normal 1.05em 'Larsseit';
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+#nav .nav_left {
+    float: left;
+}
+
+#nav .nav_right {
+    float: right;
+}
+
+#nav .nav_logo {
+    display: inline-block;
+    font-size: 1.35em;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav .nav_logo:hover,
+#nav .nav_logo:focus {
+    color: var(--hover);
+    transform: rotate(-45deg);
+}
+
+#nav .nav_right li {
+    float: left;
+    margin-right: 2.1vw;
+}
+
+#nav .nav_right li:last-child {
+    margin-right: 0;
+}
+
+#nav ul.nav_right li a {
+    display: inline-block;
+}
+
+#nav ul.nav_right li a:hover,
+#nav ul.nav_right li a:focus {
+    color: var(--hover);
+    transition: all 0.3s ease-in;
+}
+
+/* --TITLE-- */
+#title {
+    width: 100%;
+}
+
+#title_inner {
+    width: 100%;
+    height: 100%;
+    padding: 2vh 0.7vw 0;
+    box-sizing: border-box;
+}
+
+#title_inner .glass {
+    display: inline-block;
+    overflow: hidden;
+}
+
+#title_inner p {
+    font: normal 11.8vw 'GT-Sectra-Display';
+    line-height: 80%;
+    letter-spacing: -.02em;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+#title_inner p span {
+    display: inline-block;
+}
+
+#title_inner p span img {
+    width: 8.3333vw;
+    padding: 0 0.1%;
+    display: inline-block;
+}
+
+#title_inner .neue {
+    font: normal 11.2vw/9.7vw 'NeueWorld';
+}
+
+.ht_1 {
+    padding-left: 8vw;
+}
+
+.ht_3 {
+    padding-left: 10.45vw;
+}
+
+.ht_4 {
+    padding-left: 19.45vw;
+}
+
+.ht_5 {
+    padding-left: 16.25vw;
+}
+
+.ht_2 img {
+    transform: rotate(45deg);
+}
+
+.ht_3 img {
+    margin-bottom: -1vh;
+}
+
+.ht_5 img {
+    margin-left: 0.35vw;
+}
+
+/* --MAIN-- */
+#main {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 10.42vw;
+    box-sizing: border-box;
+}
+
+/* --INTRO-- */
+#intro {
+    width: 100%;
+}
+
+#intro .intro_inner {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 22vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#intro .intro_bg {
+    width: 100%;
+}
+
+#intro .intro_bg > div {
+    font: normal 11.8vw 'GT-Sectra-Display';
+    text-align: center;
+    color: #d9d9d9;
+    line-height: 98%;
+    opacity: 0;
+    transform: translateY(80%);
+}
+
+#intro .intro_bg .lt_1 {
+    letter-spacing: 0.1em;
+}
+
+/* ---> Background End */
+
+#intro .container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+#intro .intro_cont {
+    width: 100%;
+    height: 26vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#intro .intro_photo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    opacity: 0;
+}
+
+#intro .intro_photo img {
+    width: 17.1vw;
+    height: auto;
+    display: inline-block;
+}
+
+#intro .intro_tit {
+    position: absolute;
+    right: 0;
+}
+
+#intro .intro_tit h2 {
+    font: normal 2.8vw 'GT-Sectra-Display';
+    opacity: 0;
+    transform: translateY(40%);
+}
+
+#intro .intro_tit .desc_top {
+    font: normal 1.5vw/2.2vw 'Larsseit';
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(40%);
+}
+
+#intro .intro_tit .star_icon {
+    width: 3.2vw;
+    height: 3.2vw;
+    background: url(../image/icon/star.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: -5vw;
+    left: 0;
+    opacity: 0;
+    transform: translateY(40%);
+}
+
+#intro .intro_desc .desc_bottom {
+    font: normal 1.15vw/1.4vw 'Larsseit';
+    letter-spacing: 0.02em;
+    position: absolute;
+    bottom: 0;
+    right: 7.25vw;
+    opacity: 0;
+    transform: translateY(40%);
+}
+
+#intro .intro_desc .cc_icon {
+    width: 7.25vw;
+    height: 7.25vw;
+    background: url(../image/icon/craft-code.png) no-repeat center;
+    background-size: cover;
+    animation: rotateImage 5s linear infinite;
+    transform-origin: center;
+    position: absolute;
+    bottom: 3vw;
+    right: 0;
+    opacity: 0;
+}
+
+/* --Work-- */
+#work {
+    width: 100%;
+}
+
+#work .tit-gt {
+    font-family: 'GT-Sectra-Display';
+}
+
+#work .tit-neue {
+    font: 4.2vw 'NeueWorld';
+}
+
+#work .tit-lar {
+    font-family: 'Larsseit';
+}
+
+#work .work_desc {
+    font: normal 1.65vw/2.2vw'Larsseit';
+}
+
+/* --WORK > ANIMATION-- */
+#animation {
+    width: 100%;
+    height: 170vh;
+    position: relative;
+}
+
+#animation .animation_tit {
+    font-size: 4.5vw;
+    white-space: nowrap;
+}
+
+#animation .animation_tit .eye_moving img {
+    display: inline-block;
+    width: 3.75vw;
+    height: 3.2vw;
+    margin-right: 2vw;
+    padding-bottom: 1vh;
+}
+
+/*<---animation title End*/
+.animation-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 6vh 0;
+    padding-left: 3vw;
+    box-sizing: border-box;
+}
+
+.animation-preview-wrapper {
+    width: 100%;
+    height: 165vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.animation-preview {
+    position: sticky;
+    -webkit-position: sticky;
+    top: 10%;
+    left: 50%;
+    width: 0;
+    height: 28vw;
+    overflow: hidden;
+    /*    z-index: 999;*/
+}
+
+.animation-wrapper .animation-list {
+    position: absolute;
+}
+
+.animation-item {
+    display: block;
+    user-select: none;
+    margin-bottom: 2vh;
+}
+
+.animation-item a {
+    font-size: 6.95vw;
+    font-family: 'GT-Sectra-Display';
+    color: rgba(37, 37, 37, 0.9);
+    white-space: nowrap;
+}
+
+.animation-item span {
+    position: relative;
+    display: block;
+}
+
+.animation-item span:before {
+    width: 0;
+    color: var(--hover);
+    overflow: hidden;
+    position: absolute;
+    content: attr(data-text);
+    transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+}
+
+.animation-item span:hover:before {
+    width: 100%;
+}
+
+/*<---animation list End*/
+
+/* Containter */
+#work .box-387 {
+    width: 26.875vw;
+    height: 26.875vw;
+}
+
+#work .box-387 > a {
+    display: block;
+}
+
+#work .box-387 > a:hover .wk_img img {
+    transform: scale(1.1);
+}
+
+#work .box-387 > a:hover .work-tit {
+    opacity: 0.3;
+}
+
+#work .box-387 .wk_img {
+    width: 26.875vw;
+    height: 26.875vw;
+    background-color: var(--imgBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#work .box-387 .wk_img img {
+    width: 17.36vw;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+#work .box-387 .wk_img img.full {
+    width: 26.875vw;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+#work .box-580 {
+    width: 40.275vw;
+    height: 40.275vw;
+}
+
+#work .box-580 > a {
+    display: block;
+}
+
+#work .box-580 > a:hover .wk_img img {
+    transform: scale(1.1);
+}
+
+#work .box-580 > a:hover .work-tit {
+    opacity: 0.3;
+}
+
+#work .box-580 .wk_img {
+    width: 40.275vw;
+    height: 40.275vw;
+    background-color: var(--imgBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#work .box-580 .wk_img img {
+    width: 27.275vw;
+    transition: all 0.3s ease;
+}
+
+#work .box-580 .wk_img img.full {
+    width: 40.275vw;
+    transition: all 0.3s ease;
+}
+
+#work .wk_desc {
+    margin-top: 2.8vw;
+    position: relative;
+}
+
+#work .wk_desc .work-tit {
+    font-family: 'Larsseit';
+    font-size: 1.95vw;
+    transition: all 0.3s ease;
+}
+
+#work .wk_desc .work-sub {
+    font: normal 1.3vw 'GT-Super-Display';
+    color: #9d9d9d;
+    margin-top: 0.35vw;
+    white-space: nowrap;
+}
+
+/* --WORK > JSGAME-- */
+#js_game {
+    margin-top: 25vh;
+    overflow: hidden;
+}
+
+#js_game .jsg_desc {
+    float: right;
+}
+
+#js_game .jsg_tit {
+    font-size: 4.5vw;
+    white-space: nowrap;
+}
+
+#js_game .jsg_tit .eye_moving img {
+    display: inline-block;
+    width: 3.75vw;
+    height: 3.2vw;
+    margin-right: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+#jsg_con_cont {
+    width: 100%;
+    height: 96vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.jsg-re {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(40%);
+    transition: all 0.4s ease-in;
+}
+
+.jsg-re.visible {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+    transition: all 0.4s ease-out;
+}
+
+.jsg-re:nth-child(1) {
+    top: 2.2vw;
+    left: 0;
+}
+
+.jsg-re:nth-child(2) {
+    top: 7.6vw;
+    right: 0;
+}
+
+.jsg-re:nth-child(3) {
+    top: 46vw;
+    left: 5.35vw;
+}
+
+.jsg-re:nth-child(4) {
+    top: 61.6vw;
+    right: 0;
+}
+
+/* --WORK > PROJECT-- */
+#project {
+    margin-top: 8vh;
+    width: 100%;
+    height: 420vh;
+    position: relative;
+}
+
+#project .proj_tit_bg_wrap {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10vh;
+    transition: all 0.3s ease-in;
+}
+
+.proj_tit_bg_wrap.active {
+    opacity: 0.3;
+    transition: all 0.3s ease-in;
+}
+
+.proj_tit_bg {
+    padding: 10vh 0 5vh;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.proj_tit_bg .proj_tit_cont {
+    width: 100%;
+    height: 16vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.proj_tit_cont .tlc-f-lar {
+    font: normal 8.3vw 'Larsseit';
+}
+
+.proj_tit_cont .tlc-f-gts {
+    font: normal 9vw 'GT-Sectra-Display';
+    letter-spacing: 0.05em;
+}
+
+#ellipse-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ellipse-wrap .ellipse-svg {
+    width: 36.8vw;
+    height: 16vw;
+}
+
+#ellipse {
+    cx: 18.4vw;
+    cy: 8vw;
+    rx: 18vw;
+    ry: 7.8vw;
+    fill: none;
+    stroke: #252525;
+    stroke-width: 0.2vw;
+    stroke-dasharray: 1800;
+    stroke-offset: 3600;
+}
+
+#ellipse.visible {
+    animation: dash-top 1.2s cubic-bezier(0.6, 0.2, 0.58, 1.0) forwards;
+}
+
+@keyframes dash-top {
+    0% {
+        stroke-dashoffset: 1800;
+        opacity: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 3600;
+        opacity: 1;
+    }
+}
+
+.tit-lt-cont {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 36.8vw;
+    text-align: center;
+}
+
+.proj_tit_cont #tit-latest {
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.proj_tit_cont #tit-latest.active {
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.proj_tit_cont #tit-lets {
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.proj_tit_cont #tit-lets.active {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.proj_tit_cont #tit-arrow {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.proj_tit_cont .tit-work-cont {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.proj_desc {
+    width: 100%;
+    height: 12.5vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.proj_desc .proj_desc_top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+    transition: all 0.3s ease-in;
+}
+
+.proj_desc_top.active {
+    visibility: hidden;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in;
+}
+
+.proj_desc .proj_desc_bot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    transform: translateY(50%);
+    transition: all 0.3s ease-in;
+}
+
+.proj_desc_bot.active {
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s ease-in;
+}
+
+.wk_btn {
+    display: block;
+}
+
+.wk_btn:after {
+    content: "";
+    display: block;
+    width: 9vw;
+    height: 0.15vw;
+    background-color: var(--primary);
+    margin-top: 0.25vw;
+}
+
+.wk_btn:hover {
+    color: var(--hover);
+}
+
+.wk_btn:hover > span {
+    animation: btnArrow 0.8s linear infinite;
+}
+
+.wk_btn:hover:after {
+    background-color: var(--hover);
+    animation: btnStroke 0.6s linear;
+}
+
+#proj_cont {
+    display: block;
+    width: 100%;
+    height: 140vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.proj-re {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(40%);
+    transition: all 0.4s ease-out;
+}
+
+.proj-re.visible {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+    transition: all 0.4s ease-out;
+}
+
+.proj-re:nth-child(1) {
+    top: 2.1vw;
+    left: 0;
+}
+
+.proj-re:nth-child(2) {
+    top: 7.7vw;
+    right: 0;
+}
+
+.proj-re:nth-child(3) {
+    top: 45vw;
+    left: 5.35vw;
+}
+
+.proj-re:nth-child(4) {
+    top: 60vw;
+    right: 0;
+}
+
+.proj-re:nth-child(5) {
+    top: 83vw;
+    left: 0;
+}
+
+.proj-re:nth-child(6) {
+    top: 105vw;
+    right: 5.25vw;
+}
+
+/* --ABOUT-- */
+#about {
+    width: 100%;
+    margin: 30vh auto;
+}
+
+#about .about_photo_cont {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.about-tit span {
+    font-size: 4.2vw;
+    display: inline-block;
+}
+
+.about-tit span:nth-child(-n+4) {
+    font-family: 'GT-Sectra-Display';
+}
+
+.about-tit span:nth-child(n+5):nth-child(-n+9) {
+    font-family: "Larsseit";
+}
+
+.about-tit span:nth-child(n+9):nth-child(-n+13) {
+    font-family: 'GT-Sectra-Display';
+}
+
+.about-tit span:nth-child(n+13):nth-child(-n+16) {
+    font-family: "Larsseit";
+}
+
+.about_photo_cont {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.about_photo_cont .about-sub-top {
+    font-family: "Larsseit";
+    font-size: 1.8vw;
+    letter-spacing: 0.02em;
+}
+
+.about_photo_cont .about-sub-top span {
+    display: inline-block;
+}
+
+.about_photo_cont .about_photo {
+    display: block;
+    width: 100%;
+    height: 26vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 6vw;
+}
+
+.about_photo_cont .about_photo img {
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease-out;
+}
+
+.about_photo_cont .about_photo img.active {
+    top: 50%;
+    opacity: 1;
+    transition: all 0.6s ease-out;
+}
+
+.about_photo_cont .about-sub-bg {
+    width: 100%;
+    font: normal 8.35vw 'GT-Sectra-Display';
+    letter-spacing: 0.03em;
+    color: #d9d9d5;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.about_photo_cont .about-sub-bg.active {
+    top: 50%;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+
+.about_photo_cont .star {
+    display: inline-block;
+    font-size: 2.8vw;
+    animation: rotateImage 3s linear infinite;
+    transform-origin: center;
+}
+
+.ellipse_b_wrap {
+    width: 100%;
+    height: 30vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.ellipse_b_wrap .ellipse_b_svg {
+    width: 79.2vw;
+    height: 28.4vw;
+    fill: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ellipse_b_wrap .ellipse_b_svg #ellipse_b {
+    cx: 39.6vw;
+    cy: 14.2vw;
+    rx: 39.2vw;
+    ry: 14vw;
+    stroke: #252525;
+    stroke-width: 0.15vw;
+    stroke-dasharray: 4000;
+    stroke-offset: 8000;
+}
+
+#ellipse_b.active {
+    animation: dash-bottom 1s cubic-bezier(0.6, 0.2, 0.58, 1.0) forwards;
+}
+
+@keyframes dash-bottom {
+    0% {
+        stroke-dashoffset: 4000;
+        opacity: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 8000;
+        opacity: 1;
+    }
+}
+
+.ellipse_b_wrap .ellipse_b_txt {
+    font: normal 3.5vw "Larsseit";
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ellipse_b_wrap .ellipse_b_txt p {
+    margin-bottom: 0.8vw;
+}
+
+.ellipse_b_wrap .ellipse_b_txt p:last-child {
+    margin-bottom: 0;
+}
+
+/* <----Photo End*/
+
+/* ---->Description Start*/
+.about_desc_cont {
+    width: 100%;
+    padding: 12.5vw 0 0;
+    position: relative;
+}
+
+.about_desc_cont .ab_desc_wrap {
+    width: 90%;
+    padding-left: 6.7vw;
+    box-sizing: border-box;
+    float: left;
+}
+
+.ab_desc_wrap .ab_desc_inner {
+    width: 100%;
+    height: 5.8vw;
+}
+
+.ab_desc_inner .ad_num {
+    display: inline-block;
+    vertical-align: top;
+    width: 5%;
+    margin-right: 5%;
+    font: normal 2.5vw "Larsseit-Medium";
+    padding-top: 1vh;
+}
+
+.ab_desc_inner .ad_tit {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-right: 12%;
+    font: normal 2.22vw "Larsseit-Medium";
+    padding-top: 1vh;
+}
+
+.ab_desc_inner .ad_sub {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font: normal 1.25vw/2vw 'NEXON Lv1 Gothic OTF';
+}
+
+.about_desc_cont .ab_ani {
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.about_desc_cont .ab_ani p {
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+/* <----(About) Description End*/
+
+/* --FOOTER-- */
+#footer {
+    width: 100%;
+}
+
+#footer .git {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ---->Txt Slide Start*/
+#footer .git_cont {
+    width: calc(100%*2);
+    font: normal 14vw "GT-Sectra-Display";
+    white-space: nowrap;
+}
+
+#footer .git_cont p:first-child {
+    display: block;
+    animation: marquee-left 10s infinite linear;
+}
+
+#footer .git_cont p:last-child {
+    display: block;
+    animation: marquee-right 10s infinite linear;
+}
+
+@keyframes marquee-left {
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-right {
+    0% {
+        transform: translateX(-50%);
+    }
+}
+
+/* <----Txt Slide End*/
+
+#footer .email {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#footer .email_cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer .email a span {
+    font: normal 2.4vw "Larsseit";
+    color: var(--primary);
+    display: inline-block;
+}
+
+#footer .email-sub {
+    font: normal 1.6vw "Larsseit";
+    color: var(--hover);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+}
+
+#footer .email-sub.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.6s ease-out;
+}
+
+#footer .contact {
+    width: 100%;
+    padding: 0 2.7vw 2vw;
+    box-sizing: border-box;
+    font: normal 1vw "Larsseit";
+    transform: translateY(80%);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+}
+
+#footer .contact.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.6s ease-out;
+}
+
+#footer .contact a {
+    display: inline-block;
+}
+
+#footer .contact a:hover {
+    color: var(--hover);
+}
+
+#footer .contact_cont {
+    float: left;
+}
+
+#footer .contact_cont li {
+    float: left;
+    margin-right: 1.75vw;
+}
+
+#footer .contact_cont li:last-child {
+    margin-right: 0;
+}
+
+#footer .contact_cont p {
+    display: block;
+    float: right;
+}
+
+#footer .up_cont {
+    float: right;
+}
+
+/* --SCROLL EVENT CSS-- */
+.trigger {
+    width: 100%;
+    height: auto;
+}
+
+/* --ELEMENTS ANIMATION-- */
+@keyframes btnStroke {
+    20% {
+        width: 0;
+    }
+
+    100% {
+        width: 9vw;
+    }
+}
+
+@keyframes btnArrow {
+    0% {
+        margin-left: 0.5em;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes rotateImage {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/*====FOR RESPOSIVE WEB====*/
+
+/* -- 1280px Below -- */
+@media (max-width: 1280px) {
+}
+
+/* -- 1080px Below -- */
+@media (max-width: 1080px) {
+    #animation {
+        height: 135vh;
+    }
+    #animation .animation-preview-wrapper {
+        height: 125vh;
+    }
+}
+
+/* -- 960px Below -- */
+@media (max-width: 960px) {
+    #title {
+        margin-top: 1vh;
+    }
+
+    #animation {
+        height: 115vh;
+    }
+    #animation .animation-preview-wrapper{
+        height: 110vh;
+    }
+
+    #about {
+        margin: 15vh auto;
+    }
+}
+
+/* -- 840px Below --*/
+@media (max-width: 840px) {
+    #index {
+        height: 8vh;
+    }
+
+    #title {
+        margin-top: 2vh;
+    }
+
+    #nav {
+        font-size: 0.7rem;
+    }
+
+    #animation {
+        height: 100vh;
+    }
+    #animation .animation-preview-wrapper{
+        height: 95vh;
+    }
+}
+
+/* -- 768px Below -- */
+@media (max-width: 768px) {
+    #intro .intro_bg > div {
+        line-height: 130%;
+    }
+
+    #intro .intro_cont {
+        height: 45vw;
+    }
+
+    #intro .intro_photo {
+        width: 100%;
+        top: 70%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: center;
+        vertical-align: center;
+    }
+
+    #intro .intro_photo img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #intro .intro_tit {
+        width: 100%;
+        text-align: center;
+    }
+
+    #intro .intro_desc {
+        height: 8vw;
+    }
+
+    #intro .intro_desc .desc_bottom {
+        width: 100%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: -3vw;
+        line-height: 2vw;
+    }
+
+    #intro .intro_tit .star_icon {
+        left: 50%;
+        transform: translateX(-50%);
+        /*        padding-right: 2.2vw;*/
+        width: 4vw;
+        height: 4vw;
+    }
+
+    #intro .intro_desc .cc_icon {
+        right: 46%;
+        /*        transform: translateX(-50%);*/
+        bottom: 6vw;
+    }
+
+    .about_desc_cont .ab_desc_wrap {
+        padding-left: 12vw;
+        text-align: center;
+    }
+
+    .ab_desc_wrap .ab_desc_inner {
+        height: auto;
+    }
+
+    .ab_desc_inner .ad_num {
+        width: 100%;
+        display: block;
+        padding: 0 0 2vh;
+    }
+
+    .ab_desc_inner .ad_tit {
+        width: 100%;
+        display: block;
+        padding: 0 0 2vh;
+        font-size: 3.5vw;
+    }
+
+    .ab_desc_inner .ad_sub {
+        width: 100%;
+        display: block;
+        font-size: 2vw;
+        line-height: 3vw;
+        text-align: center;
+    }
+
+    #project {
+        height: 320vh;
+    }
+
+    #footer .email a span {
+        font-size: 3.2vw;
+    }
+    
+    #footer .contact {
+        font-size: 1.5vw;
+    }
+}
+
+/* -- 480px Below -- */
+@media (max-width: 480px) {
+    #intro .intro_desc .desc_bottom {
+        line-height: 2.5vw;
+        bottom: -8vw;
+    }
+    
+    #intro .intro_tit {
+        top: -6vw;
+    }
+    
+    #intro .intro_tit h2{
+        font-size: 4.2vw;
+        margin-bottom: 10px;
+    }
+    
+    #intro .intro_tit .desc_top{
+        font-size: 2.4vw;
+        line-height: 3.2vw;
+    }
+    
+    #intro .intro_desc .desc_bottom {
+        bottom: -6vw;
+        font-size: 2.2vw;
+        line-height: 2.6vw;
+    }
+    
+    #animation {
+        height: 65vh;
+    }
+    
+    #animation .animation-preview-wrapper{
+        height: 65vh;
+    }
+
+    #animation .animation-wrapper {
+        margin-top: 3vh;
+    }
+
+    #animation .animation-item {
+        margin-top: 1vh;
+    }
+
+    #work .proj_tit_bg {
+        padding-top: 5vh;
+    }
+
+    #work .work_desc {
+        line-height: 2.5vw;
+    }
+
+    #about {
+        margin-top: 8vh;
+    }
+
+    #footer {
+        height: 100vh;
+    }
+}

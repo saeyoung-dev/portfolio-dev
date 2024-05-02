@@ -1,0 +1,87 @@
+/* FONT-FACE */
+
+body {
+    font-family: 'NEXON Lv2 Gothic', sans-serif;
+}
+
+/* Nexon-Gothic */
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff'),
+        url('../font/NEXON Lv1 Gothic Low OTF.eot') format('eot'),
+        url('../NEXON Lv1 Gothic Low OTF.woff') format('woff');
+}
+
+/* GT-Sectra-Display */
+@font-face {
+    font-family: 'GT-Sectra-Display';
+    font-weight: bold;
+    font-style: normal;
+    src: url('../font/GT-Sectra-Display-Light.woff2') format('woff2'),
+    url('../font/GT-Sectra-Display-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GT-Sectra-Display';
+    font-weight: medium;
+    font-style: normal;
+    src: url('../font/GT-Sectra-Display-Medium.woff2') format('woff2'),
+    url('../font/GT-Sectra-Display-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GT-Sectra-Display';
+    font-weight: normal;
+    font-style: normal;
+    src:  url('../font/GT-Sectra-Display-Regular.woff2') format('woff2'),
+    url('../font/GT-Sectra-Display-Regular.otf') format('opentype');
+}
+
+/* Larsseit */
+@font-face {
+    font-family: 'Larsseit-Bold';
+    font-weight: bold;
+    src: url('../font/Larsseit-Bold.woff2') format('woff2'),
+        url('../font/Larsseit-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Larsseit-Medium';
+    font-weight: medium;
+    src: url('../font/Larsseit-Medium.woff2') format('woff2'),
+        url('../font/Larsseit-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    font-weight: normal;
+    src: url('../font/Larsseit-Regular.woff2') format('woff2'),
+        url('../font/Larsseit-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Larsseit-Light';
+    font-weight: lighter;
+    src: url('../font/Larsseit-Light.woff2') format('woff2'),
+        url('../font/Larsseit-Light.otf') format('opentype');
+}
+
+/* NeueWorld-ExtendedThin */
+@font-face {
+    font-family: 'NeueWorld';
+    font-style: normal;
+    font-weight: normal;
+    src: local('NeueWorld-ExtendedThin'),
+        url('../font/NeueWorld-ExtendedThin.otf') format('opentype');
+}
+
+/* GT-Super-Display-Light */
+@font-face {
+    font-family: 'GT-Super-Display';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/GT-Super-Display-Light.otf') format('opentype'),
+        url('../font/GT-Super-Display-Light.woff2') format('woff2');
+}

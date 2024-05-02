@@ -1,0 +1,485 @@
+/* ------> work.css */
+
+/* --Page Transition-- */
+body {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: none;
+    transition: all 1s linear;
+}
+
+body.fade {
+    opacity: 0.2;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+/* --HEADER-- */
+header {
+    width: 100%;
+    height: 10vh;
+}
+
+/* --NAVIGATOR-- */
+#nav {
+    width: 100%;
+    padding: 2.8vw 2.1vw 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    font: normal 1.05em 'Larsseit';
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+#nav .nav_left {
+    float: left;
+}
+
+#nav .nav_right {
+    float: right;
+}
+
+#nav .nav_logo {
+    display: inline-block;
+    font-size: 1.35em;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav .nav_logo:hover,
+#nav .nav_logo:focus {
+    color: var(--hover);
+    transform: rotate(-45deg);
+}
+
+#nav .nav_right li {
+    float: left;
+    margin-right: 2.1vw;
+}
+
+#nav .nav_right li:last-child {
+    margin-right: 0;
+}
+
+#nav ul.nav_right li a {
+    display: inline-block;
+}
+
+#nav ul.nav_right li a:hover,
+#nav ul.nav_right li a:focus {
+    color: var(--hover);
+    transition: all 0.3s ease-in;
+}
+
+/* Main */
+#main {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 8.42vw;
+    box-sizing: border-box;
+}
+
+#projects {
+    padding: 8vw 0 5vw;
+}
+
+#projects .proj-tit {
+    text-align: center;
+}
+
+#projects .proj-tit h2 {
+    font-size: 4.2vw;
+    display: inline-block;
+}
+
+#projects .proj-tit .proj-sub {
+    font: normal 1.6vw/2.6vw 'Larsseit-Light';
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 0.4s ease-in-out;
+}
+
+#projects .proj-tit .proj-sub.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.4s ease-in;
+}
+
+.proj-tit span {
+    font-size: 4.2vw;
+    display: inline-block;
+}
+
+.proj-tit span:nth-child(-n+4) {
+    font-family: 'GT-Sectra-Display';
+}
+
+.proj-tit span:nth-child(n+5):nth-child(-n+9) {
+    font-family: "Larsseit";
+}
+
+.proj-tit span:nth-child(n+9):nth-child(-n+13) {
+    font-family: 'GT-Sectra-Display';
+}
+
+.proj-tit span:nth-child(n+13):nth-child(-n+16) {
+    font-family: "Larsseit";
+}
+
+/* proj-wrapper */
+/*cubic-bezier(.215,.61,.355,1); */
+.proj-wrapper {
+    width: 100%;
+    padding: 12vh 0 8vh;
+}
+
+.proj-wrapper > div {
+    width: 28.3333%;
+    margin-right: 5%;
+    float: left
+}
+
+.proj-wrapper .proj-re-left {
+    transition: all 0.8s cubic-bezier(.215, .61, .355, 1);
+    transform: translateY(0);
+}
+
+.proj-wrapper .proj-re-left.active {
+    transition: all 0.8s ease-in;
+    transform: translateY(-9%);
+}
+
+.proj-wrapper .proj-re-middle {
+    transition: all 0.8s;
+    transform: translateY(0);
+}
+
+.proj-wrapper .proj-re-middle.active {
+    transition: all 0.8s ease-in;
+    transform: translateY(-6%);
+}
+
+.proj-wrapper .proj-re-right {
+    transition: all 0.8s cubic-bezier(.215, .61, .355, 1);
+    transform: translateY(0);
+    margin-right: 0;
+}
+
+.proj-wrapper .proj-re-right.active {
+    transition: all 0.8s ease-in;
+    transform: translateY(-3%);
+}
+
+.proj-wrapper .proj-re {
+    width: 100%;
+    height: 100%;
+}
+
+.proj-wrapper .proj-re > a {
+    display: block;
+    margin-bottom: 8vh;
+}
+
+.proj-wrapper .proj-re > a:hover .wk_img > img {
+    transform: scale(1.1);
+}
+
+.proj-wrapper .proj-re > a:hover .work-tit {
+    opacity: 0.3;
+}
+
+.proj-wrapper .proj-re .wk_img {
+    width: 100%;
+    height: 100%;
+    background-color: var(--imgBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.proj-wrapper .proj-re .wk_img img.def {
+    width: 70%;
+    height: auto;
+    padding: 15% 0;
+    transition: all 0.3s ease;
+}
+
+.proj-wrapper .proj-re .wk_img img.full {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.proj-re .wk_desc {
+    margin-top: 2.25vw;
+}
+
+.proj-re .wk_desc .work-tit {
+    font-family: 'Larsseit';
+    font-size: 1.75vw;
+    transition: all 0.3s ease;
+}
+
+.proj-re .wk_desc .work-sub {
+    font: normal 1.1vw 'GT-Super-Display';
+    color: #9d9d9d;
+    margin-top: 0.25vw;
+    white-space: nowrap;
+}
+
+/* --Project Link List-- */
+.proj-list {
+    width: 100%;
+    position: relative;
+}
+
+.proj-list:after{
+    content: 'Direct Link';
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: blue;
+    color: #fff;
+    font: normal 0.8rem "Larsseit";
+    text-align: center;
+    line-height: 120px;
+    position: absolute;
+    top: -60px;
+    right: 8.42vw;
+    z-index: 99;
+}
+
+.proj-list-cont {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.proj-list-cont .over{
+    width: calc(100%*2);
+    font: normal 7vw/9vw "Larsseit";
+    white-space: nowrap;
+}
+
+.proj-list-cont .over > div:nth-child(odd) {
+    display: block;
+    animation: marquee-left 24s infinite linear;
+}
+
+.proj-list-cont .over > div:nth-child(2n) {
+    display: block;
+    animation: marquee-right 24s infinite linear;
+}
+
+/* --Project Link Over-- */
+.proj-list-cont .over a {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.proj-list-cont .over:hover .link{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    color:var(--hover);
+}
+.proj-list-cont .over > .link:hover{
+    filter: none;
+    -webkit-filter: none;
+    color: var(--primary);
+}
+
+@keyframes marquee-left {
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@keyframes marquee-right {
+    0% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+
+/* --FOOTER-- */
+#footer {
+    width: 100%;
+}
+
+#footer .proj-list {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#footer .email {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#footer .email_cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer .email a span {
+    font: normal 2.4vw "Larsseit";
+    color: var(--primary);
+    display: inline-block;
+}
+
+#footer .email-sub {
+    font: normal 1.6vw "Larsseit";
+    color: var(--hover);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+}
+
+#footer .email-sub.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.6s ease-out;
+}
+
+#footer .contact {
+    width: 100%;
+    padding: 0 2.7vw 2vw;
+    box-sizing: border-box;
+    font: normal 1vw "Larsseit";
+    transform: translateY(80%);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+}
+
+#footer .contact.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.6s ease-out;
+}
+
+#footer .contact a {
+    display: inline-block;
+}
+
+#footer .contact a:hover {
+    color: var(--hover);
+}
+
+#footer .contact_cont {
+    float: left;
+}
+
+#footer .contact_cont li {
+    float: left;
+    margin-right: 1.75vw;
+}
+
+#footer .contact_cont li:last-child {
+    margin-right: 0;
+}
+
+#footer .contact_cont p {
+    display: block;
+    float: right;
+}
+
+#footer .up_cont {
+    float: right;
+}
+
+/* --ELEMENT ANIMATION-- */
+@keyframes rotateImage {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---Updating--- */
+#jean-micel > .update:before {
+    position: absolute;
+    top: -1vw;
+    left: 0;
+    content: 'Updating!';
+    font: normal 1vw "Larsseit";
+    background-color: rgba(37, 37, 37, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 2vw;
+    height: 2vw;
+    padding: 0 2vw;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+/*====FOR RESPOSIVE WEB====*/
+
+/* -- 1280px Below -- */
+@media (max-width: 1280px) {
+    
+}
+
+/* -- 1080px Below -- */
+@media (max-width: 1080px) {
+
+}
+
+/* -- 840px Below -- */
+@media (max-width: 840px) {
+    #index {
+        height: 5vh;
+    }
+
+    #title {
+        margin-top: 2vh;
+    }
+
+    #nav {
+        font-size: 0.7rem;
+    }
+    
+    #projects .proj-list-cont .over{
+        line-height: 11vw;
+    }
+    
+    #projects .proj-tit .proj-sub {
+        font-size: 2vw;
+        line-height: 2.8vw;
+    }
+    
+    #jean-micel > .update:before {
+        top: -1.5vw;
+        line-height: 3vw;
+        height: 3vw;
+    }
+}
+
+/* -- 768px Below -- */
+@media (max-width: 768px) {       
+    .proj-wrapper{
+        padding-top: 8vh;
+    }
+    
+    #footer .email a span {
+        font-size: 3.5vw;
+    }
+    
+    #footer .contact {
+        font-size: 1.8vw;
+    }
+}
+
+/* -- 480px Below -- */
+@media (max-width: 480px) {
+        #jean-micel > .update:before {
+        font-size: 0.8vw;
+    }
+}

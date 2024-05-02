@@ -1,0 +1,420 @@
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul#skipmenu li a {
+    width: 1px;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+
+ul#skipmenu li a:focus {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*------------------SkipMenu END----------------*/
+
+body {
+    background-color: #ffffff;
+}
+
+header#header_wrap {
+    width: 100%;
+    height: 115px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 999;
+}
+
+header#header_wrap.onscroll {
+    height: 75px;
+}
+
+header#header_wrap.on {
+    background-color: #ffffff;
+}
+
+div.category_fixed{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 115px;
+    left: 120px;
+}
+
+div#notice {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    background-color: #4a4a4a;
+}
+
+div#notice.on {
+    display: none;
+}
+
+div#notice ul {
+    height: 80px;
+    animation: slide 5s infinite;
+    -webkit-animation: slide 5s infinite;
+}
+
+div#notice ul li {
+    height: 40px;
+    text-align: center;
+}
+
+div#notice ul li a {
+    text-decoration: none;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+@keyframes slide {
+    10% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+nav#gnb {
+    width: 100%;
+    height: 75px;
+    position: relative;
+    top: 40px;
+    left: 0px;
+    z-index: 99;
+}
+
+nav#gnb.on {
+    width: 100%;
+    height: 75px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+
+h1#logo {
+    width: 100px;
+    height: 37px;
+    position: absolute;
+    top: 19px;
+    left: calc(50% - 50px);
+}
+
+h1#logo a,
+h1#logo img {
+    display: block;
+}
+
+div#gnb_inner {
+    width: 100%;
+    height: 100%;
+    padding: 0px 120px;
+    box-sizing: border-box;
+    border-bottom: solid 1px #eaeaea;
+}
+
+div.menu_left {
+    width: 235px;
+    height: 100%;
+    float: left;
+}
+
+div.menu_right {
+    width: 240px;
+    height: 100%;
+    float: right;
+}
+
+div.menu_right ul.menu_top li:last-child {
+    margin-right: 0px;
+}
+
+ul.menu_top {
+    height: 100%;
+}
+
+ul.menu_top li {
+    float: left;
+    font: normal 16px NeutraText;
+    letter-spacing: 0.2px;
+    margin-right: 40px;
+}
+
+ul.menu_top li:last-child {
+    margin-right: 0px;
+}
+
+ul.menu_top li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #1D1D1D;
+    display: block;
+    line-height: 75px;
+}
+
+ul.menu_top li a:hover,
+ul.menu_top li a:focus {
+    color: #999999;
+}
+
+/*-------SubMenu START--------*/
+
+div.sub_menu {
+    width: 100%;
+    height: 425px;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    padding: 35px 120px 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 98;
+    /*    opacity: 1;*/
+    background-color: #ffffff;
+    border-bottom: solid 1px #eaeaea;
+}
+
+/*
+div.sub_menu.on {
+    width: 100%;
+    height: 510px;
+    padding: 110px 120px 35px;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+}
+*/
+
+div.subs {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+ul.category {
+    width: 120px;
+    height: 390px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 96;
+    /*    overflow: hidden;*/
+}
+
+ul.category li {
+    font: normal 14px NeutraText;
+    margin-bottom: 20px;
+}
+
+ul.category li.sub_tit {
+    color: #1d1d1d;
+}
+
+ul.category li.sub a {
+    text-decoration: none;
+    display: inline-block;
+    color: #999999;
+}
+
+ul.category li.sub a:hover,
+ul.category li.sub a:focus {
+    color: #1d1d1d;
+}
+
+/*------(Product) Category END------*/
+
+/*-----(3depth) Category List START-------*/
+
+div.category_box {
+    width: 1520px;
+    height: 100%;
+    padding-top: 38px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    z-index: 20;
+    display: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+div.category_box.on {
+    display: block;
+}
+
+ul.category_list {
+    width: 100%;
+}
+
+ul.category_list > li {
+    width: 800px;
+    margin-bottom: 20px;
+}
+
+ul.category_list > li > a:hover,
+ul.category_list > li > a:focus {
+    color: #1d1d1d;
+}
+
+/*------Sub Banner------*/
+
+div.sub_banner {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 20;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+div.sub_banner.on {
+    opacity: 1;
+}
+
+div.sub_banner a {
+    display: inline-block;
+}
+
+div.sub_banner img {
+    height: 300px;
+    display: block;
+    border: solid 1px #b4b4b4;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+div.sub_banner p {
+    font: normal 14px NeutraText;
+    color: #1d1d1d;
+}
+
+/*-----Fixed Catgory-----*/
+
+div.f_cat {
+    width: 100%;
+    position : absolute;
+    top: 115px;
+    left: 120px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font: normal 14px NeutraText;
+    z-index: 40;
+}
+
+div.f_cat > a{
+    display: inline-block;
+    text-decoration: none;
+    font: normal 14px NeutraText;
+    color: #555555;
+}
+
+div.f_cat > a:hover{
+    color: #1d1d1d;
+}
+
+/*--------Search Bar---------*/
+
+div.search_drop {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    padding: 50px 120px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 98;
+    background-color: #ffffff;
+    border-bottom: solid 1px #eaeaea;
+}
+
+fieldset {
+    border-bottom: 1px solid #1d1d1d;
+    margin: 0px auto;
+    vertical-align: middle;
+    padding: 0.75em;
+    width: 90%;
+}
+
+input#banner_action {
+    width: 100%;
+    height: 30px !important;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+input#keyword{
+    border: none;
+    width: 600px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+input:focus{
+    outline: none;
+}
+
+img.search_icon{
+    margin-right: 20px;
+    height: 17px;
+    width: auto;
+}
+
+img.close_icon {
+    width: 17px;
+    height: 17px;
+    float: right;
+}
+
+/*--------Search Bar END---------*/
+
+/*---------------------header END-------------------*/
+
+div#content01_wrap{
+    width: 100%;
+    height: 1080px;
+    background-color: lightgray;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="choisaeyoung">
+    <meta name="description" content="Animation">
+    <title>3D Cube Animation</title>
+    <style>
+        body {
+            background-image: -webkit-linear-gradient(left, #434343 0%, #0d0d0d 100%);
+            background-image: -o-linear-gradient(left, #434343 0%, #0d0d0d 100%);
+            background-image: linear-gradient(to right, #434343 0%, #0d0d0d 100%);
+            background-color: #434343;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .cube-wrapper {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+        }
+
+        .cube-wrapper>div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            opacity: 0.2;
+            transform-origin: 50% 50% -100px;
+        }
+        
+        .cube-front {
+            transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+            background: #505050;
+            animation: c-front 10s infinite linear;
+        }
+
+        .cube-back {
+            background: #505050;
+            animation: c-back 10s infinite linear;
+        }
+
+        .cube-top {
+            background: #434343;
+            animation: c-top 10s infinite linear;
+        }
+
+        .cube-bottom {
+            background: #434343;
+            animation: c-bottom 10s infinite linear;
+        }
+        
+        .cube-left {
+            background: #606060;
+            animation: c-left 10s infinite linear;
+        }
+
+        .cube-right {
+            background: #606060;
+            animation: c-right 10s infinite linear;
+        }
+        
+        @-webkit-keyframes c-front {
+            0% {-webkit-transform:perspective(600px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+            100% {-webkit-transform:perspective(600px) rotateX(360deg) rotateY(360deg) rotateZ(0deg);}
+         }
+        
+        @-webkit-keyframes c-back {
+            0% {-webkit-transform:perspective(600px)  rotateX(0deg) rotateY(180deg) rotateZ(0deg);}
+            100% {-webkit-transform:perspective(600px) rotateX(360deg)  rotateY(540deg) rotateZ(0deg);}
+        }
+        @-webkit-keyframes c-top {
+            0% {-webkit-transform:perspective(600px) rotateX(90deg) rotateY(0deg) rotateZ(0deg);}
+            100% {-webkit-transform:perspective(600px) rotateX(450deg) rotateY(0deg) rotateZ(-360deg);}
+        }
+        @-webkit-keyframes c-bottom {
+            0% {-webkit-transform:perspective(600px)  rotateX(-90deg) rotateY(0deg) rotateZ(0deg);}
+            100% {-webkit-transform:perspective(600px) rotateX(270deg) rotateY(0deg) rotateZ(360deg);}
+        }
+        @-webkit-keyframes c-left {
+            0% {-webkit-transform: perspective(600px) rotateX(0deg) rotateY(90deg) rotateZ(0deg);}
+            100% {-webkit-transform: perspective(600px) rotateX(360deg) rotateY(450deg) rotateZ(0deg);}
+        }
+        @-webkit-keyframes c-right {
+            0% {-webkit-transform:perspective(600px) rotateX(0deg) rotateY(270deg) rotateZ(0deg);}
+            100% {-webkit-transform:perspective(600px) rotateX(360deg) rotateY(630deg) rotateZ(0deg);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cube-wrapper">
+        <div class="cube-top"></div>
+        <div class="cube-bottom"></div>
+        <div class="cube-front"></div>
+        <div class="cube-back"></div>
+        <div class="cube-left"></div>
+        <div class="cube-right"></div>
+    </div>
+</body>
+</html>

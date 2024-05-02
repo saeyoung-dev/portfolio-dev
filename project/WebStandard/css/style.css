@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/* Skip Navigation */
+#skip {position: relative;}
+#skip a {position: absolute; left: 0px; top: -35px; border: 1px solid #fff; color: #fff; background: #333; line-height: 30px; width: 140px; text-align: center;}
+#skip a:active,
+#skip a:focus {top:0px;}
+
+/*Font*/
+body {font-family:'Noto Sans KR', sans-serif;}
+
+/* Layout */
+#wrap {}
+#header {height: 335px; background: url(../img/header_bg.png) no-repeat top center;}
+#contents {}
+#footer {border-top: 1px solid #eee;}
+
+/* Contents Layout */
+#cont_nav {background-color: #FAF9F9; display: none;}
+#cont_tit {background-color: #ffffff;}
+#cont_ban {background-color: #ffffff; border-bottom: 1px solid #eee;}
+#cont_cont {background-color: #ffffff;}
+
+/* container */
+.container {width: 990px; margin: 0 auto; height: inherit; /* background: rgba(255,255,255,0.3);*/}
+
+/* Header */
+.header .header-menu {text-align: right; font-family: 'Staatliches', cursive;}
+.header .header-menu a {color: #1E833D; padding: 10px 0px 10px 13px; display: inline-block;}
+.header .header-menu a:hover {color: #FAF9F9;}
+.header .header-tit {text-align: center; font-family: 'Staatliches', cursive;}
+.header .header-tit h1 {background-color: #1E833D; font-size: 28px; padding: 8px 25px 7px 25px; display: inline-block; color: #fff; margin-top: 40px; text-transform: uppercase;  letter-spacing: 0.1em;}
+.header .header-tit a {display: inline-block; background-color: #1E833D; font-size: 16px; color: #fff; padding: 5px 25px 6px 25px; margin-top: -5px; letter-spacing: 0.05em;}
+.header .header-icon {text-align: center; margin-top: 30px;}
+.header .header-icon a {width: 60px; height: 60px; background: url(../img/icon.png) repeat-x; display: inline-block;}
+.header .header-icon a.icon1 {background-position: 0 0;}
+.header .header-icon a.icon2 {background-position: 0 -60px;}
+.header .header-icon a.icon3 {background-position: 0 -120px;}
+.header .header-icon a.icon4 {background-position: 0 -180px;}
+.header .header-icon a.icon1:hover {background-position: -60px 0;}
+.header .header-icon a.icon2:hover {background-position: -60px -60px;}
+.header .header-icon a.icon3:hover {background-position: -60px -120px;}
+.header .header-icon a.icon4:hover {background-position: -60px -180px;}
+
+/* float: left로 인한 영역깨짐(height:0) 방지법 
+1. 깨지는 영역에 똑같이 float:left를 사용한다.(X) --> 모든 박스에 float:left를 사용하게 됩니다.
+2. float의 성질을 차단하는 clear: both;를 사용한다.(X) --> 어떤 영역이 깨졌는지 찾기 어려움.
+3. float을 사용한 상위 박스한테 overflow: hidden을 사용합니다. (O) --> 현재는 제일 많이 사용.
+4. clearfix를 사용합니다. (O)
+*/
+
+/* Menu */
+.nav {overflow: hidden; padding: 30px 0;}
+.nav > div {float:left; width:40%;}
+.nav > div:last-child {width: 20%;} /* ie9부터 사용 가능 */
+.nav > div.last {width: 20%;}
+.nav > div h3 {font-family: 'Staatliches', cursive; font-size: 18px; color: #2E7C46; margin-bottom: 4px;}
+.nav > div ol {overflow: hidden;}
+.nav > div ol li {float: left; width: 50%;}
+.nav > div.last ol li {width: 100%;}
+.nav > div ol li a:hover {text-decoration: underline;}
+
+/* Title */
+.tit {position: relative;padding-top: 30px; }
+.tit h2 {font-size: 36px; font-family: 'Staatliches', cursive; letter-spacing: 0.05em; text-align: center; color: #2E7C46;}
+.tit .btn {margin-top: 20px; position: absolute; top: 5px; right: 0; width: 60px; height: 60px; background: url(../img/icon.png) no-repeat 0 -600px;}
+.tit .btn.on {background-position: 0 -660px;}
+
+/* Banner Slick */
+.ban {position: relative; padding: 24px 0 40px;}
+.ban .slick-prev {position: absolute; left: -80px; top: 80px; width: 43px; height: 43px; background: url(../img/icon.png) no-repeat -150px 0; text-indent: -9999px;}
+.ban .slick-next {position: absolute; right: -80px; top: 80px; width: 43px; height: 43px; background: url(../img/icon.png) no-repeat -150px -43px; text-indent: -9999px;}
+.ban .slick-prev:hover {background-position: -193px 0;}
+.ban .slick-next:hover {background-position: -193px -43px;}
+.ban img {background-size: cover; border: 4px solid #dcdcdc;}
+.ban img:hover {border-color: #c9c9c9;}
+.ban .slick-slide {margin: 10px;}
+.ban .slick-dots {position: absolute; bottom: 15px; display: block; width: 100%; text-align: center;}
+.ban .slick-dots li {display: inline-block; width: 15px; height: 15px; margin: 5px;}
+.ban .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 15px; height: 15px; cursor: pointer; background: #59A671; border-radius: 50%;}
+.ban .slick-dots li.slick-active button {background: #2E7C46;}
+
+/* Contents */
+.cont {overflow: hidden; padding-top: 30px;}
+.cont .column {position: relative; float: left; width: 289px; height: 363px; margin: 0 30px 30px 0; padding-right: 30px;}
+.cont .column:not(:nth-child(3n)) {margin: 0 30px 30px 0; padding-right: 30px; border-right: solid 1px #c8c8c8;} /*ie9부터 적용*/
+.cont .column.col1 {border-right: 1px solid #c8c8c8;}
+.cont .column.col2 {border-right: 1px solid #c8c8c8;}
+.cont .column.col3 {margin-right: 0; padding-right: 0;}
+.cont .column.col4 {border-right: 1px solid #c8c8c8;}
+.cont .column.col5 {border-right: 1px solid #c8c8c8;}
+.cont .column.col6 {margin-right: 0; padding-right: 0;}
+
+.cont .column .ico_img {display: block; width: 60px; height: 60px; background: url(../img/icon.png) no-repeat; position: absolute; left: 0; top: 0;}
+.cont .column .ico_tit {padding-left: 70px; font-size: 16px; letter-spacing: 0.05em; color: #2E7C46; font-family: 'Staatliches', cursive;}
+.cont .column .ico_desc {padding-left: 70px; border-bottom: 1px solid #d0d0d0; padding-bottom: 15px; margin-bottom: 15px;} 
+
+.cont .col1 .ico_img {background-position: 0 -240px;}
+.cont .col2 .ico_img {background-position: 0 -300px;}
+.cont .col3 .ico_img {background-position: 0 -360px;}
+.cont .col4 .ico_img {background-position: 0 -420px;}
+.cont .col5 .ico_img {background-position: 0 -480px;}
+.cont .col6 .ico_img {background-position: 0 -540px;}
+.cont .col1 .ico_img:hover {background-position: -60px -240px;}
+.cont .col2 .ico_img:hover {background-position: -60px -300px;}
+.cont .col3 .ico_img:hover {background-position: -60px -360px;}
+.cont .col4 .ico_img:hover {background-position: -60px -420px;}
+.cont .col5 .ico_img:hover {background-position: -60px -480px;}
+.cont .col6 .ico_img:hover {background-position: -60px -540px;}
+
+/* Notice 01 */
+.notice {position: relative;}
+.notice h4 {font-size: 14px; color: #2E7C46; padding-bottom: 3px; font-family: 'Staatliches', cursive; letter-spacing: 0.02em;}
+.notice ul li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;}
+.notice ul li a {font-size: 12px;}
+.notice a.more {position: absolute; right: 0; top: 0; display: block; background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+
+/* Notice 02 */
+.notice2 {position: relative; margin-top: 15px;}
+.notice2 h4 {font-size: 14px; color: #2E7C46; padding-bottom: 3px; font-family: 'Staatliches', cursive; letter-spacing: 0.02em;}
+.notice2 li {overflow: hidden; background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;}
+.notice2 li a {float: left; width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice2 li span {float: right; width: 30%; text-align: right;}
+.notice2 a.more {position: absolute; right: 0; top: 0; display: block; background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+
+/* Notice 03 */
+.notice3 {position: relative;}
+.notice3 h4 {font-size: 14px; color: #2E7C46; padding-bottom: 3px; font-family: 'Staatliches', cursive; letter-spacing: 0.02em;}
+.notice3 li {position: relative; padding: 8px 0 14px 60px;}
+.notice3 li a {}
+.notice3 li a img {width: 50px; position: absolute; left: 0; top: 0; border: solid 1px #59A671;}
+.notice3 li a strong {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice3 li a span {display: block; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice3 a.more {position: absolute; right: 0; top: 0; display: block; background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+
+/* Mouse Hover 01 */
+.notice_hover h4 {font-size: 14px; color: #2E7C46; padding-bottom: 3px; font-family: 'Staatliches', cursive; letter-spacing: 0.02em;}
+.notice_hover ul {overflow: hidden;}
+.notice_hover li {float: left; width: 93px; margin-right: 5px; text-align: center;}
+.notice_hover li:last-child {margin-right: 0px;} /*ie9부터 적용*/
+.notice_hover li a span {width: 93px; height: 93px; position: relative; display: block; line-height: 93px;}
+.notice_hover li a span img {width: 100%;}
+.notice_hover li a span em {visibility: hidden; position: absolute; left: 0; top: 0; background: rgba(0,0,0,0.7); color: #fff; width: 100%; height: 100%;} /*ie9부터 적용*/
+.notice_hover li a span:hover em {visibility:visible;}
+.notice_hover li a strong {padding-top: 3px; display: inline-block;font-size: 12px;}
+
+/* Mouse Hover 02 */
+.notice_hover2 ul {overflow: hidden;}
+.notice_hover2 li {float: left; width: 93px; margin-right: 5px; text-align: center;}
+.notice_hover2 li:last-child {margin-right: 0;}
+.notice_hover2 li a span{position: relative; width: 93px; height: 93px;}
+.notice_hover2 li a span img {width: 100%;}
+.notice_hover2 li a span em{visibility: hidden; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,0.7); color: #fff; width: 100%;}
+.notice_hover2 li a span:hover em{visibility: visible;}
+.notice_hover2 li a strong {padding-top: 3px; display: inline-block; font-size: 12px;}
+
+/* 콘텐츠 요소를 보이지 않게하는 방법 
+1. display: none; -- display: block; (영역이 사라짐)
+2. visibility: hidden; -- visibility: visible; (영역유지)
+3. opacity: 0; -- opacity: 1; (영역유지)
+4. (IR) width: 0; height: 0; overflow: hidden;
+*/
+
+/* Tab Menu */
+.tab_menu {position: relative; border: 1px solid #ccc; padding: 8px; height: 105px;} 
+.tab_menu ul {overflow: hidden; border-bottom: 1px solid #ccc;}
+.tab_menu ul li {float: left; border: 1px solid #ccc; margin-right: -1px; margin-bottom: -1px;}
+.tab_menu ul li a {padding: 5px 10px; display: block;}
+.tab_menu ul li ul {position: absolute; left: 0; top: 48px; width: 270px; border: 0;}
+.tab_menu ul li ul li {float: none; border: 0;}
+.tab_menu ul li ul li a {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; padding: 0 0 3px 18px; background: url(../img/dot.gif) no-repeat 9px 8px;}
+.tab_menu ul li.active {background: #59A671;}
+.tab_menu ul li.active a {color: #fff;}
+.tab_menu ul li.active ul li a {color: #333;}
+
+/* Notice 04 */
+.notice4 {position: relative; border: 1px solid #ccc;}
+.notice4 h4 {border-bottom: 1px solid #ccc; font-size: 14px; color: #2E7C46; font-weight: 700; padding: 8px 10px;}
+.notice4 h4 em {color: darkslategrey;}
+.notice4 ul {padding: 10px;}
+.notice4 li {overflow: hidden; background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px; padding-bottom: 2px;}
+.notice4 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice4 li span {float: right; width: 30%; text-align: right;}
+.notice4 a.more {position: absolute; right: 9px; top: 9px;}
+
+/* Slick Gallery */
+.gallery {position: relative; border: 1px solid #ccc; height: 255px; overflow: hidden;}
+.gallery h4 {font-size: 14px; color: #2E7C46; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px; font-family: 'Staatliches', cursive; letter-spacing: 0.02em;}
+.gallery .gallery_btn {position: absolute; right: 5px; top: 7px;}
+.gallery .gallery_btn button {float: left; margin: 1px 2px; display: block; width: 23px; height: 23px; background: url(../img/icon.png) no-repeat;}
+.gallery .gallery_btn .gb_icon1 {background-position: -150px -120px;}
+.gallery .gallery_btn .gb_icon2 {background-position: -150px -143px;}
+.gallery .gallery_btn .gb_icon3 {background-position: -150px -166px;}
+.gallery .gallery_btn .gb_icon4 {background-position: -150px -189px;}
+.gallery .gallery_btn .gb_icon1:hover {background-position: -173px -120px;}
+.gallery .gallery_btn .gb_icon2:hover {background-position: -173px -143px;}
+.gallery .gallery_btn .gb_icon3:hover {background-position: -173px -166px;}
+.gallery .gallery_btn .gb_icon4:hover {background-position: -173px -189px;}
+.gallery .gallery_img img {width: 100%;}
+
+
+/* Login */
+#login-wrap {margin-bottom: 15px; background-color: #f2f4f5; padding: 15px;}
+.login_header {overflow: hidden; font-size: 12px; height: 30px;}
+.login_header .lh_check {float: left; padding-right: 15px;}
+.login_header .lh_check .input_check {vertical-align: -2px;}
+.login_header .lh_ip {float: left;}
+.login_header .lh_ip em {color: #2E7C46; text-decoration: underline;}
+.login_content {position: relative;}
+.login_content .lc_btn {position: absolute; right: 0; top: 0; width: 62px; height: 47px; background: #fff;}
+.login_content .input_text {width: 180px; height: 16px; padding: 2px 5px; border : 1px solid #bebebe; margin-bottom: 3px; background: #fff;}
+.login_footer {}
+.login_footer li {display: inline;}
+.login_footer li a {font-size: 12px;}
+
+/* Pop-Up */
+.popup h4 {font-size: 14px; color: #2E7C46; padding-bottom: 4px; font-family: 'Staatliches', cursive; letter-spacing: 0.02em;} 
+.popup ul {overflow: hidden;}
+.popup li {float: left; width: 93px; margin-right: 5px;}
+.popup li.last {margin-right: 0;}
+.popup li img {width: 100%;}
+
+/* Footer */
+.footer {padding: 25px 0; text-align: center;}
+.footer ul {margin-bottom: 20px;}
+.footer li {position: relative; display: inline; padding : 0 7px 0 10px;}
+.footer li:before {content: ""; width: 1px; height: 12px; background: #ccc; position: absolute; left: 0; top: 2px;}
+.footer li:first-child:before{display: none;}
+.footer address{font-size: 12px; color: #999; margin-top: 20px;}
+.footer .w3c {margin-top: 30px;}
+
+/* Layer Popup */
+#layer {display: none; position: fixed; top: 50px; left: 50px; width: 700px; border: 10px solid #dceff7; box-shadow: 3px 3px 10px rgba(0,0,0,0.4);}
+#layer img {width: 100%; display: block;}
+#layer .close {position: absolute; right: 20px; top: 20px; background: #59A671; padding: 1px 6px; color: #fff;}

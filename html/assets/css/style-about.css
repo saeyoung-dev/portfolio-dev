@@ -1,0 +1,291 @@
+/* ------> about.css */
+
+/* --Page Transition-- */
+ body {
+    opacity: 1;
+    filter:none;
+    -webkit-filter:none;
+    transition: all 1s linear;
+  }
+
+  body.fade {
+    opacity: 0.2;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  }
+
+/* --HEADER-- */
+header {width: 100%; height: 10vh;}
+
+/* --NAVIGATOR-- */
+#nav {width: 100%; padding: 2.8vw 2.1vw 0; box-sizing: border-box; position: fixed; top: 0; z-index: 999; font: normal 1.05em 'Larsseit'; transform: translateY(100%); opacity: 0;}
+#nav .nav_left {float: left;}
+#nav .nav_right {float: right;}
+#nav .nav_logo {display: inline-block; font-size: 1.35em; transition: all 0.3s ease-in-out;}
+#nav .nav_logo:hover,
+#nav .nav_logo:focus {color: var(--hover); transform: rotate(-45deg);}
+#nav .nav_right li {float: left; margin-right: 2.1vw;}
+#nav .nav_right li:last-child {margin-right: 0;}
+#nav ul.nav_right li a {display: inline-block;}
+#nav ul.nav_right li a:hover,
+#nav ul.nav_right li a:focus {color: var(--hover); transition: all 0.3s ease-in;}
+
+/* Main */
+#main{width: 100%; height: auto; margin: 0 auto; padding :0 10.42vw; box-sizing: border-box;}
+
+/* About */
+#about {width: 100%;}
+
+.about-top {width: 100%;}
+.about-top .cc-icon-wrap{width: 100%; display: flex; justify-content: center; align-content: center; padding: 3vw 0 5vw;}
+.about-top .cc-icon {display: block; width: 8vw; height: 8vw; background: url(../image/icon/craft-code.png) no-repeat center; animation: rotateImage 5s linear infinite; background-size: 8vw 8vw;}
+
+.about-tit {font: normal 2.8vw "GT-Sectra-Display"; text-align: center; line-height:3.2vw;}
+.about-tit .lar{font-family: "Larsseit-Medium";}
+
+.about-photo {width: 100%;  display: flex; justify-content: center; align-items: center;}
+.about-photo .ap-inner {width: 100%; position: relative; top: 0; left:0;}
+.about-photo .ap-bg {width: 100%;}
+.about-photo .ap-bg > div {font: normal 11.8vw 'GT-Sectra-Display'; text-align: center; color: #d9d9d9; line-height: 130%;}
+.about-photo .ap-bg > div.lt_1 {letter-spacing: 0.1em;}
+.about-photo .ap-img {width: 42vw; height: auto; position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%);}
+.about-photo .ap-inner .container {width: 100%; padding-left: 18.2vw; box-sizing: border-box; position: absolute; top: 95%; transform: translateY(-50%);}
+.about-photo .ap-tit {float: left; text-align: left; width: 30%; margin-right: 5%; font: normal 2.2vw/2.8vw "GT-Sectra-Display";}
+
+.about-photo .ap-tit p:nth-child(1)::after {
+      content: "";
+      display: block;
+      background-color: #252525;
+      width: 30%;
+      height: 0.1em;
+      margin-top: 0.1em;
+}
+.about-photo .ap-tit p:nth-child(2)::after {
+      content: "";
+      display: block;
+      background-color: #252525;
+      width: 24%;
+      height: 0.1em;
+      margin-top: 0.1em;
+}
+.about-photo .ap-tit p:nth-child(3)::after {
+      content: "";
+      display: block;
+      background-color: #252525;
+      width: 77%;
+      height: 0.1em;
+      margin-top: 0.1em;
+}
+.about-photo .ap-sub {float: left; text-align: left; width: 65%; font: normal 1.05vw/2vw 'NEXON Lv1 Gothic OTF';}
+/* <----About-Top End*/
+
+.star-icon{width: 100%; text-align: center; margin: 10vw 0 3vw; transform-origin: center;}
+.st-top {margin-top: 3vw;}
+.star{display: inline-block; font-size: 3vw; animation: rotateImage 3s linear infinite;}
+
+/* About - Ellipse */
+.ellipse_b_wrap {width: 100%; height: 30vw; position: relative; top: 0; left: 0;}
+
+.ellipse_b_wrap .ellipse_b_svg {
+    width: 79.2vw;
+    height: 28.4vw;
+    fill: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ellipse_b_wrap .ellipse_b_svg #ellipse_b {
+    cx: 39.6vw;
+    cy: 14.2vw;
+    rx: 39.2vw;
+    ry: 14vw;
+    stroke: #252525;
+    stroke-width: 0.15vw;
+    stroke-dasharray: 4000;
+    stroke-offset: 8000;
+}
+
+#ellipse_b.active {
+    animation: dash-bottom 1s cubic-bezier(0.6, 0.2, 0.58, 1.0) forwards;
+}
+
+@keyframes dash-bottom {
+    0% {
+        stroke-dashoffset: 4000;
+        opacity: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 8000;
+        opacity: 1;
+    }
+}
+
+.ellipse_b_wrap .ellipse_b_txt {
+    font: normal 3.5vw "Larsseit";
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ellipse_b_wrap .ellipse_b_txt p {
+    margin-bottom: 0.8vw;
+}
+
+.ellipse_b_wrap .ellipse_b_txt p:last-child {
+    margin-bottom: 0;
+}
+/* <----About-Ellipse End*/
+
+/* ---->About - Bottom*/
+.about-bottom {width: 100%; padding: 10vw 0;}
+.about-bottom .ab_desc_wrap {width: 90%; padding-left: 6.7vw; box-sizing: border-box; float: left;}
+
+.about-bottom.ab_ani {width: 10%; height: 100%; float: left;}
+.about-bottom .ab_ani p {font-size: 1.8rem; text-align: right;}
+
+.ab_desc_wrap .ab_desc_inner {width: 100%; height: 5.8vw;}
+.ab_desc_inner .ad_num {display: inline-block; vertical-align: top; width: 5%; margin-right: 5%; font: normal 2.5vw "Larsseit-Medium"; padding-top: 1vh;}
+.ab_desc_inner .ad_tit {display: inline-block; vertical-align: top; width: 25%; margin-right: 12%; font: normal 2.22vw "Larsseit-Medium"; padding-top: 1vh;}
+.ab_desc_inner .ad_sub {display: inline-block; vertical-align: top; width: 50%; font: normal 1.25vw/2vw 'NEXON Lv1 Gothic OTF'}
+/* <----About-Bottom End*/
+
+/* --FOOTER-- */
+#footer {width: 100%;}
+#footer .git {width: 100%; overflow-x: hidden; position: relative;}
+
+/* ---->Txt Slide Start*/
+#footer .git_cont {width: calc(100%*2); font: normal 14vw "GT-Sectra-Display"; white-space: nowrap;}
+#footer .git_cont p:first-child {display: block; animation: marquee-left 10s infinite linear;}
+#footer .git_cont p:last-child {display: block; animation: marquee-right 10s infinite linear;}
+
+@keyframes marquee-left {
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-right {
+    0% {
+        transform: translateX(-50%);
+    }
+}
+/* <----Txt Slide End*/
+
+#footer .email {width: 100%; height: 90vh; position: relative; top: 0; left: 0; text-align: center;}
+#footer .email_cont {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#footer .email a span {font: normal 2.4vw "Larsseit"; color: var(--primary); display: inline-block;}
+#footer .email-sub {font: normal 1.6vw "Larsseit"; color: var(--hover); transform: translateY(100%); opacity: 0; transition: all 0.6s ease-out;}
+#footer .email-sub.active {transform: translateY(0);
+opacity: 1; transition: all 0.6s ease-out;}
+#footer .contact {width: 100%; padding: 0 2.7vw 2vw; box-sizing: border-box; font: normal 1vw "Larsseit"; transform: translateY(80%); opacity: 0; transition: all 0.6s ease-out;}
+#footer .contact.active {transform: translateY(0); opacity: 1; transition: all 0.6s ease-out;}
+#footer .contact a {display: inline-block;}
+#footer .contact a:hover {color: var(--hover);}
+#footer .contact_cont {float: left;}
+#footer .contact_cont li {float: left; margin-right: 1.75vw;}
+#footer .contact_cont li:last-child {margin-right: 0;}
+#footer .contact_cont p {display: block; float: right;}
+#footer .up_cont {float: right;}
+
+/* --ELEMENT ANIMATION-- */
+@keyframes rotateImage {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*====FOR RESPOSIVE WEB====*/
+
+/* -- 1280px Below -- */
+@media (max-width: 1280px) {
+    
+}
+
+/* -- 1080px Below -- */
+@media (max-width: 1080px) {
+
+}
+
+/* -- 840px Below -- */
+@media (max-width: 840px) {
+    #index {
+        height: 5vh;
+    }
+
+    #title {
+        margin-top: 2vh;
+    }
+
+    #nav {
+        font-size: 0.7rem;
+    }
+}
+
+/* -- 768px Below -- */
+@media (max-width: 768px) {
+    .about-photo .ap-inner .container{
+        padding-left: 0px;
+        width: 100%;
+        top: 100%;
+    }
+    .about-photo .ap-inner .ap-tit{
+        width: 0;
+        display: none;
+    }
+    .about-photo .ap-inner .ap-sub{
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+        font-size: 1.8vw;
+        line-height: 2.6vw;
+    }
+    .ab_desc_wrap {
+        padding-left: 12vw;
+        text-align: center;
+    }
+
+    .ab_desc_wrap .ab_desc_inner {
+        height: auto;
+    }
+
+    .ab_desc_inner .ad_num {
+        width: 100%;
+        display: block;
+        padding: 0 0 2vh;
+    }
+
+    .ab_desc_inner .ad_tit {
+        width: 100%;
+        display: block;
+        padding: 0 0 2vh;
+        font-size: 3.5vw;
+    }
+
+    .ab_desc_inner .ad_sub {
+        width: 100%;
+        display: block;
+        font-size: 2vw;
+        line-height: 3vw;
+        text-align: center;
+    }
+    
+    #footer .email a span {
+        font-size: 3.2vw;
+    }
+    
+    #footer .contact {
+        font-size: 1.5vw;
+    }
+}
+
+/* -- 480px Below -- */
+@media (max-width: 480px) {
+    
+}

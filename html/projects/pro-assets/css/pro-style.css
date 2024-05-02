@@ -1,0 +1,119 @@
+/* ------> Sub Page CSS*/
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* --HEADER-- */
+header {width: 100%; height: 10vh;}
+
+/* --NAVIGATOR-- */
+#nav {width: 100%; padding: 2.8vw 2.1vw 0; box-sizing: border-box; position: fixed; top: 0; z-index: 999; font: normal 1.05em 'Larsseit'; transform: translateY(100%); opacity: 0;}
+#nav .nav_left {float: left;}
+#nav .nav_right {float: right;}
+#nav .nav_logo {display: inline-block; font-size: 1.35em; transition: all 0.3s ease-in-out;}
+#nav .nav_logo:hover,
+#nav .nav_logo:focus {color: var(--hover); transform: rotate(-45deg);}
+#nav .nav_right li {float: left; margin-right: 2.1vw;}
+#nav .nav_right li:last-child {margin-right: 0;}
+#nav ul.nav_right li a {display: inline-block;}
+#nav ul.nav_right li a:hover,
+#nav ul.nav_right li a:focus {color: var(--hover); transition: all 0.3s ease-in;}
+
+/* Work-wrap */
+#work-wrap{width: 100%; padding :0 10.42vw; box-sizing: border-box;}
+
+/* Category */
+.work-tit {width: 100%;}
+.work-tit .work-category {width: 100%; position:absolute; top: 2.8vw;}
+.work-tit .work-category li {float: left; display: inline-block; font-family: "Larsseit";}
+
+.link {font-size: 1rem; box-sizing: border-box; position: fixed; top: 2.8vw; z-index: 999; transition: color 0.3s ease-in;}
+.link:hover,
+.link:focus{color: var(--hover);}
+.link:hover span {animation: btnArrow 0.8s linear infinite;}
+
+.category {position: absolute; top: 0; left: 26.85vw; font-size: 1.8rem;}
+.category span {font-size: 0.8rem;}
+
+/* Title */
+.project-title {font: normal 12.5rem "GT-Sectra-Display"}
+
+/* Proj - Skill */
+.proj-inner {width: 100%; display: flex; flex-direction: column;}
+.proj-inner h2 {font: normal 3.3rem "Larsseit"; display: inline-block;}
+.proj-cont {width: 100%; margin-top: 5vw;}
+.proj-tit {width: 100%;}
+.number-fir {box-sizing: border-box; width: 26.85vw; display: inline-block;}
+.container {padding-left: 26.85vw;}
+.rot-img {animation: rotateImage 4s linear infinite;}
+
+.proj-desc-main {font: normal 2rem/3rem "Larsseit"; letter-spacing: 2%;}
+.proj-desc-sub {font: normal 1.35rem/2.25rem "NEXON Lv1 Gothic OTF"; letter-spacing: 2%;}
+.proj-desc-info {font: normal 1.7rem/3rem "Larsseit"; letter-spacing: 2%;}
+.proj-img{display: inline-block; width: 940px; height: 520px; background-color: #999;}
+/*.proj-video{display: inline-block; width: 940px; height: auto;}*/
+
+/* Proj - Planning */
+.planning {padding-left: 26.85vw; box-sizing: border-box;}
+.planning .plan-inner {position: relative; top: 0; left: 0;}
+.planning .link-plan {position: sticky; position: -webkit-sticky; top: 5.6vw; margin-left: -200px; width: 200px; height: 48px;}
+.planning .link-plan a {transition: color 0.3s ease-in; display: inline-block; font: normal 1rem "Larsseit"; text-align: right; position: relative; top: 0; left: 0;}
+.planning .link-plan a:after{display: block; content: '→'; position: absolute; bottom: -2px; right: -16px;}
+.planning .link-plan a:hover{color: var(--hover);}
+
+.plan-box-01 h3 {margin-top: -48px;}
+.plan-inner .plan-box h3 {font: normal 1.5rem "Larsseit"; margin-bottom: 1.5vw;}
+.plan-inner .plan-box h3:after {content: ""; display: block; width: 100%; height: 1px; background-color: #c9c9c9; margin-top: 1em; margin-bottom: 1em;}
+.plan-inner .plan-box img.full {width:100%; display: block; padding-left: 0;}
+.plan-inner .plan-box img {width:90%; display: block; padding-left:10%;}
+
+/* Proj - Information */
+.info-table {padding-left: 6.6vw;}
+.info-table .tb-title {font: normal 1rem "Larsseit";}
+.info-table .tb-txt {font: normal 1.25rem "Larsseit"; }
+.info-table table {width: 100%; border-top: solid 1px #252525; border-collapse: collapse;}
+.info-table td,
+.info-table th {border-bottom: solid 1px #252525; padding: 0.85vw 3.5vw 0.85vw 0.5vw; text-align: left;}
+.info-table a {display: inline-block;}
+.info-table a:hover,
+.info-table a:focus{color: var(--hover);}
+
+/* Proj - Code View */
+.number-sec {width: 13.4vw;}
+.tab-cont {width: 100%; height: 600px; padding-left: 13.4vw; box-sizing: border-box; }
+ul.tabs {border-top: solid 1px #252525; margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-content: space-around;}
+ul.tabs li {font: normal 1rem "Larsseit"; border-display: inline-block; padding : 1vw 0; cursor:pointer;}
+ul.tabs li.active {color: var(--hover);}
+.tab-content {display: none; width: 100%; height: 550px; overflow: scroll; background-color: #171c19; padding: 1vw 1.5vw; box-sizing: border-box;}
+.tab-content.active {display: inherit;}
+
+/* Proj - Style Guide */
+.number-thi {width: 13.4vw;}
+.sg-cont {width: 100%; padding-left: 13.4vw; box-sizing: border-box;}
+.sg-box {padding: 5% 8% 0; box-sizing: border-box;}
+.sg-box img {display: block; width: 100%; height: auto;}
+
+
+/* Footer */
+.footer-wrap {width: 100%; padding: 180px 96px 30px 150px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: flex-end;}
+.footer-wrap a {display: inline-block; font-family: "Larsseit"; transition: all 0.3s ease-in;}
+.footer-wrap a:hover,
+.footer-wrap a:focus {color: var(--hover);}
+.back-btn {font: normal 10.5rem "Larsseit"; transition: all 0.3s ease-in;}
+.back-btn:hover {color: var(--hover);}
+.contact-cont {padding-bottom: 50px; box-sizing: border-box;}
+.contact-cont li {float: left; padding-right: 3vw;}
+.contact-cont li:last-child{padding-right:0;}
+
+/* --ELEMENTS ANIMATION-- */
+@keyframes btnArrow {
+    0% {
+        margin-left: 0.5em;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
