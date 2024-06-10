@@ -1,5 +1,3 @@
-## portfolio_2021
+## Portfolio 2021
 
-### 2021년 제작한 포트폴리오 사이트
-
-Copyright 2021. Choi Sae Young
+Copyright 2021-2024. Choi Sae Young
