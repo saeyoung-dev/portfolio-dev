@@ -1,4 +1,4 @@
-# 🛠 Portfolio Development - Saeyoung Choi  
+# 🛠 Portfolio - Saeyoung Choi  
 
 🚧 **This is a development repository for Saeyoung Choi's portfolio.**  
 이 레포지토리는 포트폴리오 사이트 개발을 위한 **실험적인 기능, 새로운 UI/UX 시도** 및 코드 개선을 진행하는 공간입니다.  
@@ -46,7 +46,7 @@ portfolio-dev/
 
 ## 📬 Contact  
 더 많은 정보가 궁금하다면?  
-✉️ **Email:** saeyoung@example.com  
+✉️ **Email:** saeyoung.dev@gmail.com  
 📌 **Website:** [saeyoung-choi.site](https://saeyoung-choi.site)  
 👾 **GitHub:** [@saeyoung-dev](https://github.com/saeyoung-dev)  
 
